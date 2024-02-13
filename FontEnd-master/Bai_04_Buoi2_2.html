@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        * {/** có nghĩa là tất cả các elemnet nó đểù áp dụng with heigt là của cả cái box*/
+            box-sizing:border-box;
+            
+        }
+       body {
+        /* tất cả các box trong body đều đc định dạng như thế */
+        margin:0;
+        font-family:'Roboto',sans-serif;
+
+        }
+        .box{
+            /* box-sizing: border-box; */
+            /* box-sizing: content-box; */
+            width: 300px;/*cr của box*/
+            height:50vh;
+            /*width và height chỉ là của phần content thôi neeeus ở trên là  box-sizing: content-box, khôgn phải cảu cả cái box đó(elemnet), còn là cả hộp khi ở trên là box-sizing: border-box*/
+            /* border:5px solid #100; */
+            min-height:200px;/*khi mk keo cai ở dưới lên thì cái box nó cx sẽ bị thu nhỏ lại, đến cái min này nó sẽ k thu lại nữa*/
+            max-height:300px;/*kéo ra*/
+            min-width: 400px;
+
+             border:5px dashed #100; 
+             
+             width:100px;
+             display: inline-block;/*mục đích của 2 cái này chỉ để box nằm cx 1 hàng ngang;*/
+            
+             /* padding-top:50px;
+            padding-left:100px;
+            padding-bottom:80px;
+            padding-right:100px;
+            padding:50px 100px 80px 100px;  */
+            padding:100px;
+            
+             margin-bottom: 50px;
+             margin-top:80px;
+             /* cái box1 vs box2 đều có margin nó sẽ bị ghi đè lên nhau khoảng cách nào lớn hơn thì nó lấy thôi */
+             margin-left:50px;
+             margin-right:80px;
+             /*left vs right no sẽ k ghi đè nó sẽ lấy tổng của cả 2*/
+             
+             
+            background-color: orange;/*ban đầu đổ màu hết */
+             /*background-clip: padding-box;/* có câu lệnh này nso đổ hết phần padding thôi*/
+             /*background-clip: content-box;/* có câu lệnh này nso đổ hết phần content thôi*/
+            background-clip: border-box;/* có câu lệnh này nso đổ hết phần border thôi*/
+            
+            background-size: 100% 100%;
+            background-repeat:no-repeat;
+            /* background-origin: giống hệt như background-clip chỉ khác là cái kia dùng cho màu còn cái này dung cho hình ảnh */
+            background-image: url(Bai_04_Buoi2_zimage/Buoi_04_Buoi2_zbautroi3.jpg);
+            /* background-origin:padding-box; */
+            /* background-origin: border-box ;*/
+            background-origin: content-box;
+            /*Khi chạy background-origin thì có thể commnet backgroud clip lại để nhinf rõ hơn*/
+
+            color:green;/*màu chữ cho văn bản*/
+
+            /* text-align: right;/*căn chũx theo lề phải*/
+            /*text-align: left; */
+            text-align: justify;/*căn đều cả trái và phải*/
+
+            /* text-transform: uppercase;/*viết thương tất cả các chữ cái trong box
+            text-transform: lowercase; */
+            text-transform: capitalize;
+
+            /*còn font chữ xem video 1:44:05 còn đoạn cuối xem nốt đê*/
+
+
+
+
+
+
+
+
+
+
+        }
+
+    </style>
+    <div class="box">
+        Vien bi 1
+    </div>
+
+    <div class="box">
+        Vien bi 2
+    </div>
+
+
+    
+</body>
+</html>

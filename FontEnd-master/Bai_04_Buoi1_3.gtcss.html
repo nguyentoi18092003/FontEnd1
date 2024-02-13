@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+    <!-- 02. 3 kiểu chèn CSS -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="Bai_04_Buoi1_style.css">
+</head>
+<body>
+    <!--2.1. Inline CSS (Nội tuyến)-->
+    <h2 style="color: red ; background: blue ;">Noi dung the h2</h2>
+    <!-- 2.2. Internal CSS (Nội bộ) -->
+    <!--Nhược điểm khi mk copy thêm 1 file mới, mk sửa file gốc thì file copy kia k tự động sửa-> sd cách tiếp theo 2.3-->
+    <style>
+        .tag_h2hihi{
+            color:orange;
+            background: red;
+        }
+    </style>
+    <h2 class="tag_h2hihi"> Noi dung th3 </h2>
+    <p class="tag_h2hihi"> Noi dung th3 </p>
+    <!-- 2.3. External CSS (Bên ngoài): tại sao lại dùng thì xem comment trên -->
+    <!--khi dùng cách này file để style css phải cùng cấp với file code-->
+    <!--link đc viết trong thẻ header là dòng này: <link rel="stylesheet" href="style.css"> mk dán link này vào cả file copy nữa-->
+    <h2 class="tag_h3hihi"> Noi dung th4 </h2>
+    <p class="tag_h3hihi"> Noi dung th4 </p>
+</body>
+</html>

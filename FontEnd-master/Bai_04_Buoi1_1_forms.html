@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="link dien vao cho nay xin ô backend hiện h mk học thì k có huhu" target ="_self" method="GET"
+  autocomplete="on" novalidate>
+  <!--3.4. Input Types (Các kiểu của thẻ input)-->
+  <!--KIEU TYPE CHO PHEP MHAP VAO LOAI DU LIEU-->
+  <!--KIEU TRUOC......-->
+  <!--KIEU type= "number"-->
+      <lable for="quanlityhehe"> Ghi chú hehe:</lable>
+      <br/>
+      <input id="quantityhehe" type="number" name="soluonghihi" min="1" max="5"/>
+      <!--type la loai du lieu cho phep nhap vao mot o, xem them cac loai type trong slide-->
+      <!--chu y for id giong nhau de focus-->
+      <!-- thuoc tinh min:gia tri nho nhat co the chon la 1-->
+      <!--tuong tu max cx vay -->
+      <!--type number thi co tthem 2 option min max co the co hoac khong-->
+      <br/>
+   
+  <!--KIEU type="date"-->
+      <lable for="dateStarthehe"> 1.Ngay di hehe:</lable>
+      <br/>
+      <input id="dataStarthehe" type="date"  name="Ngaydi"/>
+      <br/>
+      
+   <!--KIEU type= "time"-->
+      <lable for="dateStarthehe"> 2.gio giac nehehe:</lable>
+      <br/>
+      <input id="dataStarthehe" type="time" name="thoi gian di" />
+      <br/>
+  <!--KIEU type= "datatime-local"-->
+      <lable for="dateStarthehe"> 3.gio giac nehehe:</lable>
+      <br/>
+      <input id="dataStarthehe" type="datetime-local" name="ngaydi"/>
+      <br/>
+
+  <!--KIEU type= "file"-->
+      <lable for="file"> 4.upfile len nehehe:</lable>
+      <br/>
+      <input id="file" type="file" name="ngaydi"/>
+      <!--dat ten cua id vs type trung nhau cx k sao-->
+      <br/>
+<!--KIEU type= "checkbox"-->
+      <p>5.chọn những ngôn ngữ mà bạn đã học </p>
+      <input id="ngonnguc" type="checkbox" value="ngonNguC"name="ngonngu1"/>
+      <!--name-value: de gui len URL-->
+      <!--ở các cái trên chỉ có name k có value vì cái mk nhâpj vào chính là value-->
+      <lable for="ngonnguc"> Ngôn ngữ c</lable>
+      <br/>
+      <input id="ngonngujava" type="checkbox" value="Ngongujava" name="ngongu2"/>
+      <lable for="ngonnngujava"> Ngôn ngữ java</lable>
+      <br/>
+      <input id="nnpython" type="checkbox" value="ngonngupython"name="ngonngu3di3"/>
+      <lable for="nnpython"> Ngôn ngữ python</lable>
+      <br/>
+
+<!--KIEU type= "radio"-->
+        <!--giống checkbox nhưng khác ở chỗ checkbox tích chọn được nhiều lựa chọn còn radio chỉ chọn đc 1 thôi-->
+        <!--seo mk tick cái này lại tick đc nhiều nhể k hiểu sai đâu luôn huhu lần sau thử cho chạy hẳn sang tab mới luôn chắc do copy từ trên checkbox xuống nó bị nhiêuf cái trùng 
+                :>>> à rồi giá trị của thuộc tính name ở 3 option phải giống nhau-->
+        <p>6.chọn những ngôn ngữ mà bạn thích nhất </p>
+        <input id="ngonnguc" type="radio" value="ngonNguC"name="ngonngu"/>
+        <!--name-value: de gui len URL-->
+        <!--ở các cái trên chỉ có name k có value vì cái mk nhâpj vào chính là value-->
+        <lable for="ngonnguc"> Ngôn ngữ c</lable>
+        <br/>
+        <input id="ngonngujava" type="radio" value="Ngongujava" name="ngonngu"/>
+        <lable for="ngonnngujava"> Ngôn ngữ java</lable>
+        <br/>
+        <input id="nnpython" type="radio" value="ngonngupython"name="ngonngu"/>
+        <lable for="nnpython"> Ngôn ngữ python</lable>
+        <br/>
+<!--KIEU type= "range"--><!--nếu k ghi mặc định step=1,dai=100-->
+        <lable for="volumhihi"> 7.Âm lượng</lable>
+        <br/>
+        <input id="volumhihi" type="range" name="Amluong" step="20" min="50" max="100"/>
+        <br/>
+<!--KIEU type= "color"-->
+        <lable for="mshih"> 8.Chọn màu sắc</lable>
+        <br/>
+        <input id="mshihi" type="color" name="mausac" />
+        <br/>
+<!--KIEU type="text"-->
+        <lable for="volumhihi"> 9.Nhập text vào </lable>
+        <br/>
+        <input id="volumhihi" type="text" name="Hoten"/>
+        <br/>
+<!-- 3.5. Input Attributes (Các thuộc tính của thẻ input) -->
+<!--thuộc tính value-->
+<!--KIEU type="text": áp dụng tính năng chỉnh sửa-->
+      <lable for="volumhihi"> 10.chỉnh sửa text </lable>
+      <br/>
+      <input id="volumhihi" type="text" name="Hoten" value="Dang Phuong Nan"/>
+<!--phải cho sẵn thuộc tính value vào để người viết chỉnh sửa: việc này sau sẽ lấy từ ông backend, sửa xong gửi đi nó sẽ luu lại trong database-->
+<br/>
+<!--thuộc tính readonly-->
+      <lable for="cccd"> 11.Can cuoc cong dan </lable>
+      <br/>
+      <input id="cccd" type="text" name="Hoten" value="012344556" readonly/>
+<!--khi dùng thuộc tính readon khi kích vào sẽ k sửa được nó nhưng nó vẫn cho update lên-->
+<!--thuộc tính disable-->
+        <br/>
+        <lable for="cccd"> 12.Can cuoc cong dan loại 2 </lable>
+        <br/>
+        <input id="cccd" type="text" name="Hoten" value="012344556" disabled/>
+<!--khi dùng thuộc tính disable khi kích vào sẽ k sửa được nó nhưng nó k cho update lên-->
+<!--thuôcj tính placeholder :gợi ý mờ mờ-->
+<br/>
+<lable for="fullname"> 13.Nhap text có gợi ys mờ </lable>
+      <br/>
+      <input id="fullname" type="text" name="HoTen" maxlength="30" placeholder="Ví dụ: ĐẠNG CHU NAM"/>
+
+<!--thuôcj tính required :bắt buuocj phải nhập mới cho gửi-->
+<br/>
+<lable for="fullname"> 14.Nhap text bắt buộc </lable>
+      <br/>
+      <input id="fullname" type="text" name="HoTen" maxlength="30" placeholder="Ví dụ: ĐẠNG CHU NAM" required/>
+
+
+
+
+
+      <!--KIEU type="submit"--><!--de tao nut gui-->
+        <br/>
+        <input type="submit" value="Gui"/>
+        <br/>
+        <br/>
+
+</body>
+</html>

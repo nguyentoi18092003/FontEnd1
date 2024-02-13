@@ -1,0 +1,16 @@
+.tag_h3hihi{
+    color: red;
+    background: green;
+    text-align: center;
+}
+/*bỏ cặp thẻ style đi vì thẻ style chỉ dùng trong html thôi*/
+/*sửa trên đây phát sửa được tất cả các file copyr luôn*/
+.tag_h3hihi{
+    
+    background:     yellow;
+    
+}
+/*Nếu trùng bộ chọn và tên thuộc tính, thì giá trị của bộ chọn cuối cùng
+được sử dụng.
+thuộc tính tex-align cái sau k có nên nó giữ nguyên của cái trước.
+ */

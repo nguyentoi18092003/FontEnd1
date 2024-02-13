@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài 04: Học CSS, CSS3 cơ bản (Tiết 1)</title>
+</head>
+<!-- 01. Khái niệm, cú pháp, selectors -->
+<body>
+    <!-- 1.2. Cú pháp -->
+        <style>
+            /*<!--color,background là thuộc tính(property), red, grean là giá trị thuộc tính,còn nhieèu thuộc tính nữa sẽ hc=ọc sau-->*/
+            /* ● Bộ chọn element */
+            h2{
+                color: red;
+                background: green;
+            }
+            p{
+                color: blue;   
+            }
+            /* ● Bộ chọn id ít dùng,k nên dùng */
+            /*● Bộ chọn class: dùng để css có tính tái sử dụng, sử đụng được cho nhiều elemant khác nhau*/
+            .color-bluehihi{
+                color: blue;
+
+            }
+            /*● Bộ chọn chung: rất ít dùng, nó áp dụng cho cả trang luôn*/
+            *{
+                text-align: center;
+            }
+            /*● Bộ chọn nhóm cho nhiều loại luôn*/
+            h6,p,.color-bluehihi{
+                /*cho tất cả h6,p, .color_bludehihi*/
+                background:red;  
+            }
+            
+        </style> 
+
+        <h2> Nội Dung Thẻ</h2><!--mk đang css cho tên thẻ h2(nhìn tên h2 ở 2 chỗ)(Style chính là phần css)-->
+        <p> Nội Dung Thẻ P </p>
+        <h5 class="color-bluehihi">Thẻ nội dung h5</h5>
+        <h4 >Thẻ nội dung h4 so 1</h4>
+        <h4 class="color-bluehihi">Thẻ nội dung h4 so 2</h4>
+        <h5 class="color-bluehihi">Thẻ nội dung h5 số 2</h5><!--chô nào có class="color-bluehihi" nó đều css giống nhau-->
+        <h6 class="color-bluehihi">Thẻ nội dung h6</h6><!--chô nào có class="color-bluehihi" nó đều css giống nhau-->
+        
+    
+
+    
+
+
+</body>
+</html>
